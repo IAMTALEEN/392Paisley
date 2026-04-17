@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>392 Paisley Blvd W CMA Report | RE/MAX Professionals</title>
+  <meta name="description" content="Comparative Market Analysis for 392 Paisley Blvd W, Mississauga, ON" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" defer></script>
+  <style>
+    :root, [data-theme="light"] {
+      --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+      --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+      --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+      --text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
+      --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
+
+      --space-1: 0.25rem;
+      --space-2: 0.5rem;
+      --space-3: 0.75rem;
+      --space-4: 1rem;
+      --space-5: 1.25rem;
+      --space-6: 1.5rem;
+      --space-8: 2rem;
+      --space-10: 2.5rem;
+      --space-12: 3rem;
+      --space-16: 4rem;
+      --space-20: 5rem;
+
+      --color-bg: #f7f6f2;
+      --color-surface: #fcfbf8;
+      --color-surface-2: #f3f0ec;
+      --color-surface-offset: #ede8e1;
+      --color-border: #d8d2ca;
+      --color-divider: #e3ddd6;
+      --color-text: #1f1a17;
+      --color-text-muted: #6b655d;
+      --color-text-faint: #9b948b;
+      --color-text-inverse: #faf8f3;
+      --color-primary: #003DA5;
+      --color-primary-hover: #002b73;
+      --color-primary-highlight: #dbe5f8;
+      --color-accent: #DC1C2E;
+      --color-success: #2f6b3c;
+      --radius-sm: 0.375rem;
+      --radius-md: 0.75rem;
+      --radius-lg: 1rem;
+      --radius-xl: 1.25rem;
+      --shadow-sm: 0 1px 2px rgba(20, 18, 15, 0.06);
+      --shadow-md: 0 6px 24px rgba(20, 18, 15, 0.08);
+      --shadow-lg: 0 16px 40px rgba(20, 18, 15, 0.12);
+      --font-display: 'Instrument Serif', Georgia, serif;
+      --font-body: 'Inter', system-ui, sans-serif;
+      --content-default: 1120px;
+      --transition-interactive: 180ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    [data-theme="dark"] {
+      --color-bg: #131210;
+      --color-surface: #1b1a18;
+      --color-surface-2: #23211e;
+      --color-surface-offset: #2a2723;
+      --color-border: #3c3832;
+      --color-divider: #2f2c27;
+      --color-text: #e6e1d8;
+      --color-text-muted: #b3ab9f;
+      --color-text-faint: #847c71;
+      --color-text-inverse: #12110f;
+      --color-primary: #78A8FF;
+      --color-primary-hover: #9CC0FF;
+      --color-primary-highlight: #243048;
+      --color-accent: #FF8A97;
+      --color-success: #78b184;
+      --shadow-sm: 0 1px 2px rgba(0,0,0,.22);
+      --shadow-md: 0 6px 24px rgba(0,0,0,.28);
+      --shadow-lg: 0 16px 40px rgba(0,0,0,.38);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+    body {
+      min-height: 100dvh;
+      background: var(--color-bg);
+      color: var(--color-text);
+      font-family: var(--font-body);
+      font-size: var(--text-base);
+      line-height: 1.6;
+    }
+    img, svg, canvas { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    button {
+      cursor: pointer; border: none; background: none; color: inherit;
+      transition: background var(--transition-interactive), color var(--transition-interactive), border-color var(--transition-interactive), transform var(--transition-interactive);
+    }
+    :focus-visible { outline: 2px solid var(--color-primary); outline-offset: 3px; border-radius: var(--radius-sm); }
+
+    .page-shell {
+      max-width: var(--content-default);
+      margin: 0 auto;
+      padding: var(--space-6) var(--space-4) var(--space-16);
+    }
+
+    .skip-link {
+      position: absolute; left: -9999px; top: auto;
+    }
+    .skip-link:focus {
+      left: var(--space-4); top: var(--space-4);
+      background: var(--color-primary); color: white; padding: var(--space-3) var(--space-4); z-index: 999;
+    }
+
+    .topbar {
+      position: sticky; top: 0; z-index: 50;
+      backdrop-filter: blur(18px);
+      background: color-mix(in srgb, var(--color-bg) 86%, transparent);
+      border-bottom: 1px solid var(--color-divider);
+    }
+
+    .topbar-inner {
+      max-width: calc(var(--content-default) + var(--space-8));
+      margin: 0 auto;
+      padding: var(--space-3) var(--space-4);
+      display: flex; align-items: center; justify-content: space-between; gap: var(--space-4);
+    }
+
+    .brand {
+      display: flex; align-items: center; gap: var(--space-3);
+      min-width: 0;
+    }
+
+    .logo-mark {
+      width: 40px; height: 40px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--color-primary), color-mix(in srgb, var(--color-primary) 70%, white));
+      display: grid; place-items: center; color: white;
+      box-shadow: var(--shadow-sm);
+      flex-shrink: 0;
+    }
+
+    .logo-copy strong { display: block; font-size: var(--text-sm); }
+    .logo-copy span { display: block; color: var(--color-text-muted); font-size: var(--text-xs); }
+
+    .topbar-actions {
+      display: flex; align-items: center; gap: var(--space-2);
+      flex-wrap: wrap; justify-content: flex-end;
+    }
+
+    .btn {
+      min-height: 44px;
+      padding: 0 var(--space-4);
+      border-radius: var(--radius-full, 9999px);
+      border: 1px solid var(--color-border);
+      font-size: var(--text-sm);
+      font-weight: 600;
+      display: inline-flex; align-items: center; justify-content: center; gap: var(--space-2);
+      background: var(--color-surface);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .btn-primary {
+      background: var(--color-primary);
+      color: var(--color-text-inverse);
+      border-color: var(--color-primary);
+    }
+
+    .btn-primary:hover { background: var(--color-primary-hover); }
+    .btn-secondary:hover { background: var(--color-surface-2); }
+
+    .hero {
+      padding: clamp(var(--space-8), 7vw, var(--space-16)) 0 var(--space-10);
+      display: grid;
+      grid-template-columns: 1.25fr .85fr;
+      gap: var(--space-8);
+      align-items: end;
+    }
+
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: var(--space-2);
+      padding: var(--space-2) var(--space-3);
+      border-radius: 999px;
+      background: var(--color-primary-highlight);
+      color: var(--color-primary);
+      font-size: var(--text-xs);
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: var(--space-4);
+    }
+
+    h1, h2, h3, .display { font-family: var(--font-display); line-height: 1.08; letter-spacing: -0.02em; }
+    h1 { font-size: var(--text-xl); max-width: 12ch; }
+    h2 { font-size: var(--text-xl); margin-bottom: var(--space-3); }
+    h3 { font-size: var(--text-lg); margin-bottom: var(--space-2); }
+    p { max-width: 68ch; }
+
+    .hero-lead {
+      color: var(--color-text-muted);
+      margin-top: var(--space-4);
+      max-width: 58ch;
+    }
+
+    .hero-side {
+      background: linear-gradient(180deg, var(--color-surface), var(--color-surface-2));
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-xl);
+      padding: var(--space-6);
+      box-shadow: var(--shadow-md);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: var(--space-4);
+      margin-top: var(--space-4);
+    }
+
+    .stat {
+      padding: var(--space-4);
+      background: var(--color-surface-2);
+      border: 1px solid var(--color-divider);
+      border-radius: var(--radius-lg);
+    }
+
+    .stat-label {
+      color: var(--color-text-muted);
+      font-size: var(--text-xs);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 700;
+    }
+
+    .stat-value {
+      font-size: var(--text-lg);
+      font-weight: 800;
+      margin-top: var(--space-2);
+    }
+
+    .section {
+      padding: var(--space-10) 0;
+      border-top: 1px solid var(--color-divider);
+    }
+
+    .section-head {
+      display: flex; align-items: end; justify-content: space-between; gap: var(--space-4);
+      margin-bottom: var(--space-6);
+      flex-wrap: wrap;
+    }
+
+    .section-note { color: var(--color-text-muted); max-width: 58ch; }
+
+    .cards-3, .cards-2 {
+      display: grid;
+      gap: var(--space-4);
+    }
+    .cards-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .cards-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+    .card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-xl);
+      padding: var(--space-5);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .meta-list {
+      display: grid; gap: var(--space-3);
+      margin-top: var(--space-4);
+    }
+
+    .meta-row {
+      display: flex; justify-content: space-between; gap: var(--space-4);
+      padding-bottom: var(--space-3);
+      border-bottom: 1px dashed var(--color-divider);
+    }
+
+    .meta-row:last-child { border-bottom: none; padding-bottom: 0; }
+    .meta-row span:first-child { color: var(--color-text-muted); }
+    .meta-row span:last-child { font-weight: 600; text-align: right; }
+
+    .price-band {
+      display: inline-flex; align-items: center; gap: var(--space-2);
+      padding: var(--space-2) var(--space-3);
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--color-success) 14%, var(--color-surface));
+      color: var(--color-success);
+      font-size: var(--text-sm);
+      font-weight: 700;
+      margin-bottom: var(--space-4);
+    }
+
+    .valuation-panel {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: var(--space-4);
+      align-items: stretch;
+    }
+
+    .range-box {
+      background: linear-gradient(180deg, color-mix(in srgb, var(--color-primary) 8%, var(--color-surface)), var(--color-surface));
+      border: 1px solid color-mix(in srgb, var(--color-primary) 24%, var(--color-border));
+      border-radius: var(--radius-xl);
+      padding: var(--space-6);
+      box-shadow: var(--shadow-md);
+    }
+
+    .range-value {
+      font-size: clamp(2rem, 4vw, 3.5rem);
+      line-height: 1;
+      margin: var(--space-3) 0;
+      font-weight: 800;
+      letter-spacing: -0.04em;
+    }
+
+    .mini-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: var(--space-3);
+      margin-top: var(--space-5);
+    }
+
+    .mini-card {
+      padding: var(--space-4);
+      border-radius: var(--radius-lg);
+      background: var(--color-surface-2);
+      border: 1px solid var(--color-divider);
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-xl);
+      background: var(--color-surface);
+      box-shadow: var(--shadow-sm);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 860px;
+    }
+
+    th, td {
+      text-align: left;
+      padding: var(--space-4);
+      border-bottom: 1px solid var(--color-divider);
+      vertical-align: top;
+      font-size: var(--text-sm);
+    }
+
+    th {
+      font-size: var(--text-xs);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--color-text-muted);
+      background: var(--color-surface-2);
+      position: sticky;
+      top: 0;
+    }
+
+    tbody tr:hover { background: color-mix(in srgb, var(--color-primary) 4%, var(--color-surface)); }
+
+    .address-cell strong { display: block; margin-bottom: var(--space-1); }
+    .address-cell span { color: var(--color-text-muted); font-size: var(--text-xs); }
+
+    .badge {
+      display: inline-flex; align-items: center; justify-content: center;
+      padding: 0.35rem 0.6rem;
+      border-radius: 999px;
+      font-size: var(--text-xs);
+      font-weight: 700;
+      letter-spacing: .02em;
+      white-space: nowrap;
+    }
+    .badge-active { background: color-mix(in srgb, var(--color-primary) 12%, var(--color-surface)); color: var(--color-primary); }
+    .badge-sold { background: color-mix(in srgb, var(--color-success) 14%, var(--color-surface)); color: var(--color-success); }
+
+    .chart-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-xl);
+      padding: var(--space-5);
+      box-shadow: var(--shadow-sm);
+      min-height: 360px;
+    }
+
+    .chart-card canvas { width: 100% !important; height: 280px !important; }
+
+    .insight-list {
+      display: grid; gap: var(--space-3);
+      margin-top: var(--space-4);
+    }
+
+    .insight-item {
+      display: flex; gap: var(--space-3);
+      align-items: flex-start;
+      padding: var(--space-4);
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+    }
+
+    .insight-dot {
+      width: 12px; height: 12px; border-radius: 50%;
+      margin-top: 0.45rem; flex-shrink: 0;
+      background: var(--color-accent);
+      box-shadow: 0 0 0 6px color-mix(in srgb, var(--color-accent) 14%, transparent);
+    }
+
+    .footer {
+      padding: var(--space-10) 0 var(--space-4);
+      color: var(--color-text-muted);
+      font-size: var(--text-sm);
+    }
+
+    .print-note {
+      margin-top: var(--space-4);
+      padding: var(--space-4);
+      background: var(--color-surface-2);
+      border-radius: var(--radius-lg);
+      border: 1px dashed var(--color-border);
+      color: var(--color-text-muted);
+      font-size: var(--text-sm);
+    }
+
+    @media (max-width: 960px) {
+      .hero,
+      .valuation-panel,
+      .cards-3,
+      .cards-2 {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-grid,
+      .mini-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 640px) {
+      .page-shell { padding-inline: var(--space-3); }
+      .topbar-inner { padding-inline: var(--space-3); }
+      .hero-grid,
+      .mini-grid { grid-template-columns: 1fr; }
+      .topbar-actions { width: 100%; justify-content: stretch; }
+      .topbar-actions .btn { flex: 1 1 auto; }
+      .section-head { align-items: start; }
+    }
+
+    @media print {
+      .topbar, .btn, .print-note { display: none !important; }
+      body { background: white; }
+      .page-shell { max-width: 100%; padding: 0; }
+      .section { break-inside: avoid; }
+      .card, .chart-card, .range-box, .hero-side, .table-wrap { box-shadow: none; }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand" aria-label="CMA report brand">
+        <div class="logo-mark" aria-hidden="true" style="background: linear-gradient(180deg, #DC1C2E 0 33%, #ffffff 33% 66%, #003DA5 66% 100%); color:#003DA5; border:1px solid rgba(0,0,0,.06);">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M7 10.5c0-3 2.3-5.5 5-5.5s5 2.5 5 5.5c0 1.7-.7 3.3-1.9 4.4L12 20l-3.1-5.1A6.17 6.17 0 0 1 7 10.5Z" fill="rgba(255,255,255,.96)" stroke="#003DA5" stroke-width="1.2"/>
+            <path d="M9.5 10.7h5" stroke="#003DA5" stroke-width="1.4" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="logo-copy">
+          <strong>RE/MAX CMA · 392 Paisley Blvd W</strong>
+          <span>RE/MAX Professionals Inc. · Mississauga, ON</span>
+        </div>
+      </div>
+      <div class="topbar-actions">
+        <button class="btn btn-secondary" data-theme-toggle aria-label="Switch theme">Theme</button>
+        <button class="btn btn-primary" onclick="window.print()">Print / Save PDF</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="page-shell">
+    <section class="hero" aria-labelledby="hero-title">
+      <div>
+        <div class="eyebrow">Comparative Market Analysis</div>
+        <h1 id="hero-title">392 Paisley Blvd W, Mississauga</h1>
+        <p class="hero-lead">A client-ready digital CMA for a detached home in Cooksville, built from the attached GeoWarehouse report, local active listings, sold comparables, and January to March 2026 market snapshots.</p>
+        <div class="print-note" style="margin-top: var(--space-4); max-width: 62ch;">Prepared by <strong>Taleen Mirzayan</strong>, Broker · RE/MAX Professionals Inc. · 416-985-6160 · <a href="https://taleenmirzayan.com" target="_blank" rel="noopener noreferrer">taleenmirzayan.com</a> · <a href="https://instagram.com/iamtaleen_" target="_blank" rel="noopener noreferrer">@iamtaleen_</a><br>Analysis valid as of April 17, 2026. Estimated values may change in 30+ days, up or down, as market conditions shift.</div>
+      </div>
+      <aside class="hero-side" aria-label="Summary panel">
+        <div class="price-band">Recommended list range: $950,000 to $1,100,000</div>
+        <p style="color: var(--color-text-muted);">Pricing leans toward the mid-$900Ks because the closest active competitor is under $900K, while larger Cooksville bungalows and two-storey homes are asking and selling well above $1.1M.</p>
+        <div class="hero-grid">
+          <div class="stat">
+            <div class="stat-label">Property Type</div>
+            <div class="stat-value">Detached Freehold</div>
+          </div>
+          <div class="stat">
+            <div class="stat-label">Lot Size</div>
+            <div class="stat-value">6,060 sq ft</div>
+          </div>
+          <div class="stat">
+            <div class="stat-label">Bedrooms / Baths</div>
+            <div class="stat-value">3 bed · 1+1 bath</div>
+          </div>
+          <div class="stat">
+            <div class="stat-label">2025 Taxes</div>
+            <div class="stat-value">$6,555</div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section" aria-labelledby="subject-title">
+      <div class="section-head">
+        <div>
+          <h2 id="subject-title">Subject property</h2>
+          <p class="section-note">Verified property facts from the GeoWarehouse file are summarized below so you can edit or replace any field before sending the CMA live.</p>
+        </div>
+      </div>
+      <div class="cards-2">
+        <article class="card">
+          <h3>Core details</h3>
+          <div class="meta-list">
+            <div class="meta-row"><span>Address</span><span>392 Paisley Blvd W, Mississauga, ON L5B 2A6</span></div>
+            <div class="meta-row"><span>Owner on file</span><span>SIMS, STELLA</span></div>
+            <div class="meta-row"><span>PIN</span><span>133570097</span></div>
+            <div class="meta-row"><span>Property type</span><span>Single-family detached freehold</span></div>
+            <div class="meta-row"><span>Zoning</span><span>R3 Residential</span></div>
+            <div class="meta-row"><span>Year built</span><span>1972</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <h3>Physical features</h3>
+          <div class="meta-list">
+            <div class="meta-row"><span>Bedrooms</span><span>3</span></div>
+            <div class="meta-row"><span>Bathrooms</span><span>1 full + 1 half</span></div>
+            <div class="meta-row"><span>Garage</span><span>Attached · 1 space</span></div>
+            <div class="meta-row"><span>Fireplaces</span><span>1</span></div>
+            <div class="meta-row"><span>Lot frontage</span><span>52.51 ft</span></div>
+            <div class="meta-row"><span>Lot depth</span><span>114.67 ft</span></div>
+            <div class="meta-row"><span>MPAC assessment</span><span>$634,000</span></div>
+          </div>
+        </article>
+      </div>
+      <div class="print-note">Edit note: this file is fully static HTML, so you can open it in any code editor and swap numbers, comments, branding, and price recommendations before pushing to GitHub and deploying on Vercel.</div>
+    </section>
+
+    <section class="section" aria-labelledby="market-title">
+      <div class="section-head">
+        <div>
+          <h2 id="market-title">Market backdrop</h2>
+          <p class="section-note">These figures frame the pricing conversation for Cooksville and the broader 905 detached market during the first quarter of 2026.</p>
+        </div>
+      </div>
+      <div class="cards-3" style="margin-bottom: var(--space-4);">
+        <article class="card">
+          <h3>January 2026</h3>
+          <div class="meta-list">
+            <div class="meta-row"><span>905 detached sales</span><span>1,062</span></div>
+            <div class="meta-row"><span>Average price</span><span>$1,205,859</span></div>
+            <div class="meta-row"><span>Average DOM</span><span>45</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <h3>February 2026</h3>
+          <div class="meta-list">
+            <div class="meta-row"><span>905 detached sales</span><span>1,246</span></div>
+            <div class="meta-row"><span>Average price</span><span>$1,240,467</span></div>
+            <div class="meta-row"><span>Average DOM</span><span>36</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <h3>March 2026</h3>
+          <div class="meta-list">
+            <div class="meta-row"><span>905 detached sales</span><span>1,661</span></div>
+            <div class="meta-row"><span>Average price</span><span>$1,248,832</span></div>
+            <div class="meta-row"><span>Average DOM</span><span>31</span></div>
+          </div>
+        </article>
+      </div>
+      <div class="cards-2">
+        <article class="chart-card">
+          <h3>905 detached pricing trend</h3>
+          <canvas id="marketTrendChart" aria-label="905 detached average price chart" role="img"></canvas>
+        </article>
+        <article class="card">
+          <h3>Cooksville snapshots</h3>
+          <div class="meta-list">
+            <div class="meta-row"><span>March 2026 detached / sidesplit avg.</span><span>$940,000</span></div>
+            <div class="meta-row"><span>March 2026 SP/LP</span><span>85.5%</span></div>
+            <div class="meta-row"><span>March 2026 DOM</span><span>19</span></div>
+            <div class="meta-row"><span>Cooksville detached avg. price</span><span>$1,252,250</span></div>
+            <div class="meta-row"><span>Cooksville median SP/LP</span><span>101%</span></div>
+            <div class="meta-row"><span>Cooksville average DOM</span><span>46</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="active-title">
+      <div class="section-head">
+        <div>
+          <h2 id="active-title">Active competition</h2>
+          <p class="section-note">These listings are the clearest current alternatives for buyers comparing homes in Cooksville. They help set the ceiling for positioning and negotiation strategy.</p>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Address</th>
+              <th>Status</th>
+              <th>Price</th>
+              <th>Home</th>
+              <th>Size</th>
+              <th>Lot</th>
+              <th>Garage</th>
+              <th>DOM</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="address-cell"><strong>2338 Dorothea Crt</strong><span>MLS W12969362 · Raised bungalow</span></td>
+              <td><span class="badge badge-active">Active</span></td>
+              <td>$899,900</td>
+              <td>3+1 bed · 2 bath</td>
+              <td>700–1100 sq ft</td>
+              <td>6,329 sq ft</td>
+              <td>Attached 1</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td class="address-cell"><strong>163 Floradale Dr</strong><span>MLS W12750544 · Bungalow</span></td>
+              <td><span class="badge badge-active">Active</span></td>
+              <td>$1,195,000</td>
+              <td>3+1 bed · 2 bath</td>
+              <td>1100–1500 sq ft</td>
+              <td>55 × 159 ft</td>
+              <td>Attached 1</td>
+              <td>74</td>
+            </tr>
+            <tr>
+              <td class="address-cell"><strong>2553 Stillmeadow Rd</strong><span>MLS W12942706 · Bungalow</span></td>
+              <td><span class="badge badge-active">Active</span></td>
+              <td>$1,229,000</td>
+              <td>3+1 bed · 2 bath</td>
+              <td>1100–1500 sq ft</td>
+              <td>84 × 90.64 ft</td>
+              <td>Attached 1</td>
+              <td>16</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="sold-title">
+      <div class="section-head">
+        <div>
+          <h2 id="sold-title">Sold comparables</h2>
+          <p class="section-note">The sold data in your attachment skews toward larger two-storey homes, which is why it works better as upper-bound context than as a direct apples-to-apples match for the subject property.</p>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Address</th>
+              <th>Status</th>
+              <th>Sold Price</th>
+              <th>List Price</th>
+              <th>SP/LP</th>
+              <th>Home</th>
+              <th>Size</th>
+              <th>Sold Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="address-cell"><strong>2555 Cynara Rd</strong><span>MLS W12883354 · 2-storey detached</span></td>
+              <td><span class="badge badge-sold">Sold</span></td>
+              <td>$1,215,000</td>
+              <td>$1,299,800</td>
+              <td>93.5%</td>
+              <td>4+3 bed · 4 bath</td>
+              <td>2,672 sq ft above grade</td>
+              <td>Apr 3, 2026</td>
+            </tr>
+            <tr>
+              <td class="address-cell"><strong>2673 Kingsberry Cres</strong><span>MLS W12709764 · Larger detached</span></td>
+              <td><span class="badge badge-sold">Sold</span></td>
+              <td>$1,450,000</td>
+              <td>$1,499,850</td>
+              <td>96.7%</td>
+              <td>4+2 bed · 5 bath</td>
+              <td>Large family home</td>
+              <td>Feb 10, 2026</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="positioning-title">
+      <div class="section-head">
+        <div>
+          <h2 id="positioning-title">Pricing position</h2>
+          <p class="section-note">This recommendation balances the closest active competitor under $900K with the broader Cooksville detached market that supports stronger values for larger upgraded homes.</p>
+        </div>
+      </div>
+      <div class="valuation-panel">
+        <article class="range-box">
+          <div class="eyebrow" style="margin-bottom: var(--space-3);">Suggested strategy</div>
+          <p style="color: var(--color-text-muted);">For a marketing launch aimed at strong buyer traffic, the subject appears best positioned in a broad value band that can attract buyers today while leaving flexibility for presentation, condition, and showing response.</p>
+          <div class="range-value">$950,000–$1,100,000</div>
+          <p>Suggested starting list price: <strong>$969,900</strong>. This keeps the property competitive in today's market while preserving room to capture stronger demand if the home shows well relative to nearby inventory.</p>
+          <div class="mini-grid">
+            <div class="mini-card">
+              <div class="stat-label">Broad entry point</div>
+              <div class="stat-value">$950,000</div>
+            </div>
+            <div class="mini-card">
+              <div class="stat-label">Recommended ask</div>
+              <div class="stat-value">$969,900</div>
+            </div>
+            <div class="mini-card">
+              <div class="stat-label">Upper market band</div>
+              <div class="stat-value">$1,100,000</div>
+            </div>
+            <div class="mini-card">
+              <div class="stat-label">MPAC context</div>
+              <div class="stat-value">$634,000</div>
+            </div>
+          </div>
+        </article>
+        <article class="chart-card">
+          <h3>Active vs sold price context</h3>
+          <canvas id="compChart" aria-label="Comparable price context chart" role="img"></canvas>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="talking-title">
+      <div class="section-head">
+        <div>
+          <h2 id="talking-title">Client talking points</h2>
+          <p class="section-note">Use these short points in your listing presentation, text follow-up, or call recap.</p>
+        </div>
+      </div>
+      <div class="insight-list">
+        <div class="insight-item"><div class="insight-dot"></div><div><strong>Closest benchmark:</strong> 2338 Dorothea Crt is the nearest active pricing anchor at $899,900, but it is marketed as an as-is raised bungalow and not a direct premium benchmark.</div></div>
+        <div class="insight-item"><div class="insight-dot"></div><div><strong>Upper-end context:</strong> active Cooksville bungalows with larger footprints and broader renovation appeal are asking between roughly $1.19M and $1.23M, showing where a stronger finish level can push value.</div></div>
+        <div class="insight-item"><div class="insight-dot"></div><div><strong>Negotiation reality:</strong> the March niche market snapshot showed 85.5% SP/LP on a limited detached / sidesplit sample, which supports pricing carefully rather than chasing an unrealistic list number.</div></div>
+        <div class="insight-item"><div class="insight-dot"></div><div><strong>Market direction:</strong> broader 905 detached pricing improved from January to March 2026 while average days on market fell from 45 to 31, which is a healthier backdrop for a spring listing launch.</div></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p><strong>Taleen Mirzayan</strong> · Broker · RE/MAX Professionals Inc. Brokerage · 416-985-6160 · <a href="https://taleenmirzayan.com" target="_blank" rel="noopener noreferrer">taleenmirzayan.com</a> · <a href="https://instagram.com/iamtaleen_" target="_blank" rel="noopener noreferrer">@iamtaleen_</a></p>
+      <p>Prepared for 392 Paisley Blvd W · Cooksville, Mississauga · Ready for GitHub and Vercel deployment.</p>
+      <p>Analysis date: April 17, 2026. Market conditions and estimated values can change in 30+ days, either positively or negatively, based on new inventory, sold data, buyer demand, and property presentation.</p>
+    </footer>
+  </main>
+
+  <script>
+    (function () {
+      const root = document.documentElement;
+      const toggle = document.querySelector('[data-theme-toggle]');
+      let mode = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      root.setAttribute('data-theme', mode);
+      if (toggle) {
+        const syncLabel = () => toggle.textContent = mode === 'dark' ? 'Light mode' : 'Dark mode';
+        syncLabel();
+        toggle.addEventListener('click', () => {
+          mode = mode === 'dark' ? 'light' : 'dark';
+          root.setAttribute('data-theme', mode);
+          syncLabel();
+        });
+      }
+    })();
+
+    window.addEventListener('DOMContentLoaded', function () {
+      const textColor = getComputedStyle(document.documentElement).getPropertyValue('--color-text').trim();
+      const mutedColor = getComputedStyle(document.documentElement).getPropertyValue('--color-text-muted').trim();
+      const primary = getComputedStyle(document.documentElement).getPropertyValue('--color-primary').trim();
+      const accent = getComputedStyle(document.documentElement).getPropertyValue('--color-accent').trim();
+      const success = getComputedStyle(document.documentElement).getPropertyValue('--color-success').trim();
+      const border = getComputedStyle(document.documentElement).getPropertyValue('--color-border').trim();
+
+      new Chart(document.getElementById('marketTrendChart'), {
+        type: 'line',
+        data: {
+          labels: ['Jan 2026', 'Feb 2026', 'Mar 2026'],
+          datasets: [{
+            label: '905 Detached Avg Price',
+            data: [1205859, 1240467, 1248832],
+            borderColor: primary,
+            backgroundColor: 'rgba(0,45,114,0.10)',
+            fill: true,
+            borderWidth: 3,
+            pointRadius: 4,
+            pointHoverRadius: 5,
+            tension: 0.32
+          }]
+        },
+        options: {
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              callbacks: {
+                label: (ctx) => '$' + ctx.parsed.y.toLocaleString()
+              }
+            }
+          },
+          scales: {
+            x: {
+              grid: { display: false },
+              ticks: { color: mutedColor }
+            },
+            y: {
+              ticks: {
+                color: mutedColor,
+                callback: (v) => '$' + (v / 1000000).toFixed(2) + 'M'
+              },
+              grid: { color: border }
+            }
+          }
+        }
+      });
+
+      new Chart(document.getElementById('compChart'), {
+        type: 'bar',
+        data: {
+          labels: ['Dorothea Active', 'Floradale Active', 'Stillmeadow Active', 'Cynara Sold', 'Kingsberry Sold'],
+          datasets: [{
+            data: [899900, 1195000, 1229000, 1215000, 1450000],
+            backgroundColor: [primary, primary, primary, success, success],
+            borderRadius: 10,
+            maxBarThickness: 56
+          }]
+        },
+        options: {
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              callbacks: {
+                label: (ctx) => '$' + ctx.parsed.y.toLocaleString()
+              }
+            }
+          },
+          scales: {
+            x: {
+              ticks: { color: mutedColor, maxRotation: 0, minRotation: 0 },
+              grid: { display: false }
+            },
+            y: {
+              ticks: {
+                color: mutedColor,
+                callback: (v) => '$' + (v / 1000000).toFixed(2) + 'M'
+              },
+              grid: { color: border }
+            }
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>
